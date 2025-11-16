@@ -1,0 +1,5 @@
+service: my-app
+port: 8080
+debug: false
+allowed_hosts:
+  - example.com

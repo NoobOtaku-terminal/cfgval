@@ -1,0 +1,5 @@
+typer[all]
+jsonschema
+pyyaml
+tomli
+rich

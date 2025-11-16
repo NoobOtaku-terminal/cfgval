@@ -1,0 +1,13 @@
+repos:
+  - repo: local
+
+hooks:
+  - id: cfgval-validate
+
+name: cfgval-validate
+
+entry: python -m cfgval.cli validate --schema cfgval/schemas/example_schema.json
+
+language: system
+
+files: \.(yml|yaml|json|toml)$ # uncomment it when you are using it

@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cfgval"
+version = "0.1.0"
+dependencies = ["typer[all]", "jsonschema", "pyyaml", "tomli", "rich"]
+[project.scripts]
+cfgval = "cfgval.cli:app"

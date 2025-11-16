@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Example config",
+  "type": "object",
+  "required": ["service", "port"],
+  "properties": {
+    "service": { "type": "string" },
+    "port": { "type": "integer", "minimum": 1, "maximum": 65535 },
+    "debug": { "type": "boolean" },
+    "allowed_hosts": {
+      "type": "array",
+      "items": { "type": "string", "format": "hostname" }
+    }
+  },
+  "additionalProperties": false
+}
